@@ -1,4 +1,4 @@
-package com.tencent.configserver;
+package com.demo.configserver;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

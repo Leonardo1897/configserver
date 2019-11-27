@@ -1,8 +1,9 @@
-package com.tencent.configserver.service;
+package com.demo.configserver.service;
 
-import com.tencent.configserver.SearchLocation;
-import com.tencent.configserver.exception.FileStorageException;
-import com.tencent.configserver.exception.MyFileNotFoundException;
+import com.demo.configserver.FileUtils;
+import com.demo.configserver.SearchLocation;
+import com.demo.configserver.exception.FileStorageException;
+import com.demo.configserver.exception.MyFileNotFoundException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.Resource;
@@ -18,8 +19,6 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
 import java.util.concurrent.locks.ReentrantLock;
-
-import static com.tencent.configserver.FileUtils.filterDir;
 
 /**
  * @author sandylian
@@ -42,7 +41,7 @@ public class FileStorageServiceImpl implements FileStorageService {
         reentrantLock.lock();
         try{
             String patten = "\\{[a-zA-Z]*\\}";
-            storageBaseDir = filterDir(searchLocation.getSearchLocations().get(0).replaceAll(patten,"")).substring(5);
+            storageBaseDir = FileUtils.filterDir(searchLocation.getSearchLocations().get(0).replaceAll(patten,"")).substring(5);
             //=========================debug================================
             //storageBaseDir = "C:/Users/sandylian/Desktop/";
             fileStorageLocation = Paths.get(storageBaseDir).normalize();

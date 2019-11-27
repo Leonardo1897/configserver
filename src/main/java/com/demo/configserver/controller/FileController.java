@@ -1,7 +1,7 @@
-package com.tencent.configserver.controller;
+package com.demo.configserver.controller;
 
-import com.tencent.configserver.model.UploadFileResponse;
-import com.tencent.configserver.service.FileStorageService;
+import com.demo.configserver.model.UploadFileResponse;
+import com.demo.configserver.service.FileStorageService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;

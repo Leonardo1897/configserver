@@ -1,4 +1,4 @@
-package com.tencent.configserver.service;
+package com.demo.configserver.service;
 
 import org.springframework.core.io.Resource;
 import org.springframework.web.multipart.MultipartFile;

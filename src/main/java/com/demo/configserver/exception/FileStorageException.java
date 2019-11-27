@@ -1,4 +1,4 @@
-package com.tencent.configserver.exception;
+package com.demo.configserver.exception;
 
 /**
  * @author sandylian

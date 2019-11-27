@@ -1,4 +1,4 @@
-package com.tencent.configserver.exception;
+package com.demo.configserver.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

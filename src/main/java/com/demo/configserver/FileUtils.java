@@ -1,4 +1,4 @@
-package com.tencent.configserver;
+package com.demo.configserver;
 
 import lombok.extern.slf4j.Slf4j;
 

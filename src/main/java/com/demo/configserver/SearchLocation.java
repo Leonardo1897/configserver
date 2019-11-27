@@ -1,4 +1,4 @@
-package com.tencent.configserver;
+package com.demo.configserver;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;

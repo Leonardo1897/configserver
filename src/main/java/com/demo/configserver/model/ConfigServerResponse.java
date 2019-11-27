@@ -1,4 +1,4 @@
-package com.tencent.configserver.model;
+package com.demo.configserver.model;
 
 import lombok.Data;
 
