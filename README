@@ -1,0 +1,9 @@
+THIS DEMO PROJECT DEMONSTRATE A SIMPLE USAGE COMBINED WITH FILE UPLOAD
+DEFAULT CONFIG IS UNDER LINUX,IF YOU WANT TO RUN UNDER WINDOW,MAKE SURE
+TO MODIFY THE PARA
+cloud:
+    config:
+      server:
+        native:
+          search-locations:
+            - file:///C:/Users/Leonardo1897/Desktop/conf
